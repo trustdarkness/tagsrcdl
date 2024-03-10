@@ -1,0 +1,41 @@
+{
+  "manifest_version": 2,
+  "name": "TagSrcDL",
+  "version": "0.1",
+  "author": "Mike Thompson",
+
+  "description": "Downloads a file sourced in a particular tag on a given page with the loaded pages id and security params",
+
+  "icons": {
+    "48": "icons/tagsrcdl48.png",
+    "96": "icons/tagsrcdl96.png"
+  },
+
+  "permissions": [
+    "downloads",
+    "downloads.open"
+  ],
+
+  "browser_action": {
+    "default_icon": {
+      "19": "icons/tagsrcdl_sm_19.png",
+      "38": "icons/tagsrcdl_sm_38.png"
+    },
+    "default_title": "Download video"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content-script.js"]
+    }
+  ],
+
+  "background": {
+    "scripts": [
+      "background-script.js"
+    ]
+  }
+
+}
+
