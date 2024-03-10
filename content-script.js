@@ -164,7 +164,7 @@ function injectNav(event) {
 // loaded, so that's the element we hooked to do our navigation 
 // change.
 const injectEl = document.querySelector(injectQuerystring);
-if (injectEl === "undefined") {
+if (injectEl === null) {
     // TODO: make this a notification
     console.log("could not find an element to add an event listener that matched "+injectEl);
 }

@@ -1,7 +1,7 @@
 // SPDX-FileCopyrightText: © 2024 Mike Thompson mt@trustdarkness.com
 // SPDX-License-Identifier: MIT License
 
-// NOTE: ALL CONST VALUES BELOW ARE FOR ILLUSTRATION PURPOSES ONLY
+// NOTE: ALL FILE SCOPED VALUES BELOW ARE FOR ILLUSTRATION PURPOSES ONLY
 // to preserve my privacy and to not make it too obvious what
 // this was designed for, I've inserted dummy values.  This emaple
 // should be easy to modify to download most content from the web 
@@ -34,7 +34,7 @@ const debug = true;
 // this must be a subdirectory inside your downloads folder as 
 // specified in Settings: General: Downloads: Save Files To
 // Note: these cannot be absolute or relative paths.
-const download_subdir = "special-downloads"
+let download_subdir = "special-downloads"
 
 // a filter here is a string that if it appears within the 
 // text the script found to use for the name of the 
